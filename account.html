@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page</title> <!-- Title of the account page -->
+
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header section with the Trivago logo -->
+    <header>
+        <img src="images/Trivago-logo-light.png" alt="Trivago Logo"> <!-- Trivago logo -->
+    </header>
+
+    <!-- Include JavaScript files for functionality -->
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+
+    <!-- Navigation bar with links to other sections of the website -->
+    <nav>
+        <!-- Each link triggers the openWindow function to navigate to a specific page -->
+        <a href="javascript:void(0)" onclick="openWindow('index.html')">Central Hub</a>
+        <a href="javascript:void(0)" onclick="openWindow('contact.html')">Contact Us</a>
+        <a href="javascript:void(0)" onclick="openWindow('account.html')">Account</a>
+        <a href="javascript:void(0)" onclick="openWindow('hotel.html')">Hotel</a>
+    </nav>
+
+    <!-- Theme toggle button (only visible on the account page) -->
+    <div class="theme-toggle-container">
+        <button onclick="toggleTheme()">Toggle Theme</button> <!-- Button to toggle between light and dark themes -->
+    </div>
+
+    <!-- Main content area -->
+    <main>
+        <h1>Your Account</h1> <!-- Heading for the account page -->
+
+        <!-- Profile Overview Section -->
+        <section class="account-overview">
+            <h2>Profile Information</h2> <!-- Section title for profile info -->
+            <div class="profile-picture">
+                <img src="https://via.placeholder.com/150" alt="User Profile Picture"> <!-- Placeholder image for the user's profile -->
+            </div>
+            <p><strong>Username:</strong> john_doe</p> <!-- Displaying the username -->
+            <p><strong>Email:</strong> john_doe@example.com</p> <!-- Displaying the email -->
+            <button id="logoutButton">Logout</button> <!-- Logout button -->
+        </section>
+
+        <!-- Account Update Section -->
+        <section class="update-account">
+            <h2>Update Account Information</h2> <!-- Section title for updating account -->
+            <form action="/update-account" method="POST"> <!-- Form to update account info -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="john_doe@example.com" required><br><br>
+
+                <label for="password">New Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password"><br><br>
+
+                <button type="submit">Update Information</button> <!-- Button to submit the updated info -->
+            </form>
+        </section>
+
+        <!-- Login Section -->
+        <section class="login-section" id="loginSection">
+            <h2>Login</h2> <!-- Section title for the login form -->
+            <form action="/login" method="POST"> <!-- Form to handle user login -->
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="username" required><br><br>
+
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required><br><br>
+
+                <button type="submit">Login</button> <!-- Login button -->
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer section with copyright information -->
+    <footer>
+        <p>© 2024 Trivago. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

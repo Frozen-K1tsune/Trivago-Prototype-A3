@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivago Central Hub & Hotel Info</title> <!-- Title of the webpage -->
+
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header section with the Trivago logo -->
+    <header>
+        <img src="images/Trivago-logo-light.png" alt="Trivago Logo"> <!-- Trivago logo -->
+    </header>
+
+    <!-- Navigation bar with links to other sections of the website -->
+    <nav>
+        <!-- Each link triggers the openWindow function to navigate to a specific page -->
+        <a href="javascript:void(0)" onclick="openWindow('index.html')">Central Hub</a>
+        <a href="javascript:void(0)" onclick="openWindow('contact.html')">Contact Us</a>
+        <a href="javascript:void(0)" onclick="openWindow('account.html')">Account</a>
+        <a href="javascript:void(0)" onclick="openWindow('hotel.html')">Hotel</a>
+    </nav>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Central Hub Section -->
+        <section id="central-hub">
+            <h1>Welcome to the Central Hub</h1> <!-- Main heading for the Central Hub -->
+            <p>This is the main page where you can navigate to other sections of the Trivago prototype.</p> <!-- Brief description -->
+        </section>
+
+        <!-- Hotel Information Section -->
+        <section id="hotel-info">
+            <h2>Featured Hotel</h2> <!-- Heading for the featured hotel section -->
+            <p>Explore some of the best hotel deals we have to offer!</p> <!-- Introductory text for the hotel section -->
+            
+            <!-- Hotel details including name, location, price, amenities, and image -->
+            <div class="hotel-details">
+                <h3>Grand Resort</h3> <!-- Hotel name -->
+                <p>Location: New York City</p> <!-- Hotel location -->
+                <p>Price per night: $250</p> <!-- Price information -->
+                <p>Amenities: Free Wi-Fi, Pool, Gym, Spa</p> <!-- List of amenities -->
+                <img src="images/Grand-hotel.png" alt="Grand Resort Hotel Image"> <!-- Image of the hotel -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section with copyright information -->
+    <footer>
+        &copy; 2024 Trivago Prototype
+    </footer>
+
+    <!-- Link to the external JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+

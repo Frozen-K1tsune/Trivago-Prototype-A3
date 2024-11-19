@@ -1,0 +1,252 @@
+/* Global Styles */
+body {
+    background-color: #121212; /* Default dark background */
+    color: #f0f0f0; /* Light text for readability */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Mode Styles */
+body.light-theme {
+    background-color: #ffffff; /* Light background */
+    color: #121212; /* Dark text for readability */
+}
+
+/* Header */
+header {
+    background-color: black;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+    transition: all 0.3s;
+}
+
+/* Light Mode Adjustments for Header */
+body.light-theme header {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+body.light-theme header img {
+    content: url('images/Trivago-logo-light.png');
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #1c1c1c;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffcc00; /* Yellow for links */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700; /* Slightly brighter yellow on hover */
+}
+
+/* Light Mode Adjustments for Navigation Bar */
+body.light-theme nav {
+    background-color: #f4f4f4;
+}
+
+body.light-theme nav a {
+    color: #121212; /* Dark text color for links in light theme */
+}
+
+body.light-theme nav a:hover {
+    color: #000; /* Darker hover effect */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    margin: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Light Mode Adjustments for Main Content */
+body.light-theme main {
+    background-color: #f4f4f4;
+    color: #121212;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Light Mode Adjustments for Footer */
+body.light-theme footer {
+    background-color: #f4f4f4;
+    color: #121212;
+}
+
+/* Button Styling */
+button {
+    background-color: #ff9000;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff5000;
+}
+
+/* Light Mode Adjustments for Buttons */
+body.light-theme button {
+    background-color: #ffcc00; /* Yellow button in light mode */
+}
+
+body.light-theme button:hover {
+    background-color: #ffd700;
+}
+
+/* Hyperlink Styling */
+a {
+    color: #ffcc00; /* Yellow links for dark mode */
+    text-decoration: none; /* Remove underline by default */
+}
+
+a:hover {
+    color: #ffd700; /* Brighter yellow on hover */
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Light Mode Hyperlink Adjustments */
+body.light-theme a {
+    color: #3c00ff; /* Blue links for light mode */
+}
+
+body.light-theme a:hover {
+    color: #0000ff; /* Brighter blue on hover */
+}
+
+/* Hotel Listings - Flexbox to display hotels side by side */
+.hotel-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Light Mode Adjustments for Hotel Listings */
+body.light-theme .hotel-listings {
+    background-color: #ffffff; /* Light background for hotel listings */
+}
+
+/* Style for individual hotel articles */
+.hotel {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%; /* Each hotel takes up 30% of the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Light Mode Adjustments for Hotel Articles */
+body.light-theme .hotel {
+    background-color: #f4f4f4; /* Lighter background for hotel articles */
+    color: #121212; /* Dark text for hotel listings */
+}
+
+.hotel h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.hotel p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.hotel .hotel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Reviews and Bookings Section */
+.hotel .reviews {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.hotel .reviews span {
+    color: #ffd700; /* Golden color for ratings */
+}
+
+.hotel .booking-info {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #00ff00; /* Green for available bookings */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Light Mode Adjustments for Footer */
+body.light-theme footer {
+    background-color: #f4f4f4;
+    color: #121212;
+}
+
+/* Theme Toggle Button Container */
+.theme-toggle-container {
+    text-align: right;
+    padding: 15px;
+    background-color: #121212; /* Dark background for the container in dark mode */
+}
+
+/* Light Mode Adjustments for the Theme Toggle Container */
+body.light-theme .theme-toggle-container {
+    background-color: #f4f4f4; /* Light background for the container in light mode */
+}
+
+/* Theme toggle button styling */
+.theme-toggle-container button {
+    background-color: #ff9000;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #f0f0f0; /* Border color for dark theme */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.theme-toggle-container button:hover {
+    background-color: #ff5000;
+}
+
+/* Light Mode Adjustments for Theme Toggle Button */
+body.light-theme .theme-toggle-container button {
+    background-color: #ff9000; /* Light button color */
+    color: black;
+    border: 2px solid #121212; /* Border color for light theme */
+}
+
+body.light-theme .theme-toggle-container button:hover {
+    background-color: #ff5000;
+}
